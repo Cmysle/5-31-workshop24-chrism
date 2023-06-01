@@ -32,7 +32,10 @@ function App() {
             <h2 id="pupName">{featuredPup.name}</h2>
             <ul>
               <li id="pupAge">Age: {featuredPup.age}</li>
-              <li id="pupEmail">Email: {featuredPup.email}</li>
+              <li id="pupEmail">
+                Email:{" "}
+                <a href={`mailto:${featuredPup.email}`}>{featuredPup.email}</a>
+              </li>
             </ul>
           </div>
         )}
